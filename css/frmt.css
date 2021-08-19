@@ -92,9 +92,10 @@ body{
 .opc_menu{
     display: block;
     float: right;
-    margin-right: 50px;
+    margin-right: 80px;
     margin-top: 10px;
-    width:250px;
+    width:290px;
+ 
 }
 
 .opc_menu li img{
@@ -139,6 +140,31 @@ body{
     display: inline-block;
     margin-left: 20px;
 }
+
+#img_menu{
+    width: 20px;
+}
+
+.opc_sub_menu{
+    position: absolute;
+    display: inline-block;
+    margin-top: 80px;
+    font-weight: 400;
+    color:#828282;
+    left:30px;
+}
+
+
+.opc_sub_menu li{ 
+    margin-top: 10px;
+    padding-bottom: 5px;
+    cursor: pointer;
+}
+
+.opc_sub_menu li:hover{
+    color:#4F4F4F;
+    border-bottom: 1px solid  #CFCFCF;
+} 
 
 #msg_erro{
     position: fixed;

@@ -3,7 +3,9 @@
  
             <div  id='container_ico'>
                 <div id='ico_opcoes'>
-                        &equiv;
+                         &equiv; 
+                        <!-- <img  id='img_menu' src="img/menu_opc.png" >     -->
+
                 </div>
                 <div id='ico_logo'>
                    <img src="ico/ico-estelar.svg" alt="">
@@ -27,6 +29,16 @@
                         <li>Sair</li>
                     </ul>
            </nav>
+
+           <nav class='opc_sub_menu'>
+                    <ul>
+                       <li>	&#10162; Hortaliça</li>
+                       <li>&#10148; Culinária</li>
+                       <li>&#10148; Ervas Medic</li>
+                    </ul>
+           </nav>
+
+
 
 
 </div>
