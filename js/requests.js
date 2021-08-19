@@ -31,6 +31,8 @@ function exect_log(){
                     password:password
                 },
                 success:function(retorno){
+
+                    console.log(retorno)
                        
                         if(retorno ==0) {
                             $('#msg_erro').html('Usuário não Localizado!!');

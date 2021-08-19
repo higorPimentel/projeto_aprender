@@ -39,7 +39,7 @@ function executa_login(){
         if($processa_query->num_rows > 0){
 
             $result = mysqli_fetch_assoc($processa_query);
-            $pass_word_bd = $result['senha'] ;
+            $pass_word_bd = $result['password'] ;
             
             $password_verific = password_verify($senha,$pass_word_bd);
 

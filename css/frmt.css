@@ -5,21 +5,21 @@ body{
 }
 
 .container_principal{
-    margin-top: 120px;
+    margin-top: 220px;
 }
 
 
 .frm_login{
     background-color: #f8f6f6;
     width:260px;
-    margin-left: 35%;
+    margin-left: 40%;
     margin-top: 8px;
     padding-bottom: 20px;
 }
 
 #tit-log{
     font-weight: 600;
-    margin-left: 35%;
+    margin-left: 40%;
     color:#CDB5CD;
   
 }
