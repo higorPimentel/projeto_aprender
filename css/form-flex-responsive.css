@@ -4,12 +4,10 @@
 >> classe .cx_text, define as propriedades inputs
 >> classe .col-1.., 5 Tamanho dos inputs
 >> @media(max-width: 950px ) configura os itens do display responsivo
-
 	example
 <form id="frm_registro">
 				
 		<h1>Cad. Info Frete</h1>
-
 			
 			<div class="row">	
 					<div class="grupo_cxs col-1" id="grupo_cx_id">
@@ -18,20 +16,16 @@
 					</div>	
 			</div>
 </form>
-
-
 */
 
-body {
-	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}	
 
-.container_lista{
+
+.frm_registro{
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
 	border:solid 1px #CFCFCF;
-	border-radius: 10px;
+	border-radius: 5px;
 	margin:50px;
 	padding: 30px;
 	z-index: 0;
@@ -40,60 +34,47 @@ body {
 }
 
 
-.container_lista h2{
+.frm_registro h2{
 	border-bottom:solid 1px #CFCFCF; 
 	border-right: solid 1px #CFCFCF;
 	padding: 2px 10px 2px 10px;
 	background-color: #e4e4e4;
-	margin-top: 80px;
-	
+	margin-top: 50px;
+}
+
+.lb{
+	color:#4F4F4F;
 }
 
 
 .cx_text{	
 	outline: none;
-	border:solid 1px  #dddada;
-/*	border:solid 1px  #B5B5B5;*/
-	height: 30px;
+	margin-top: 5px;
+	border:solid 1px  #d4cece;
+	border-radius: 3px;
+	height: 28px;
 	width:100%;
 	padding-left: 10px;
-	border-radius: 3px;
 
 }
 
 
-
-
-.titulo_bloco{
-	margin-top: 12px;	
-	border-bottom: solid 1px lightgray;
-	color: #4F4F4F;
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 40%;
-	padding-bottom: 10px;
-   
-
+.lb_text {
+	font-weight: bold;
+	font-size: 15px;
+	color:#696969; 
 }
 
 .grupo_cxs{
 	display: inline-block;
 	margin-top: 15px;
-
-}
-
-.grupo_bloco{
-	border:solid 1px #9fabac;
-	padding-bottom:30px;
-	margin-bottom:30px;
 }
 
 .grupo_btns a{ 
 margin-left: -40px;
 }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7{
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6{
   position: relative;
   width: 100%;
   min-height: 1px;
@@ -102,41 +83,14 @@ margin-left: -40px;
 
 }
 
-.option_select{
-	/*background-color: #00FFFF;*/
-	border:solid 2px #77766e;
-	background-color: #54FF00;
-	padding-top: 10px;
-	height: 30px;
-	border-radius: 10px;
-	color:#3b3737;
-	cursor:pointer;
-	font-size: 0.9em;
-	padding-right:5px;
-	width: 50px;
-	
-}
-
-.option_select:hover{
-	transition: 0.5s;
-	border:solid 2px rgb(26, 75, 83);
-	background-color: rgb(181, 191, 192);
-}
-
-
 .row{
 width:100%;
 }
 
-.row_2{
-width: 30%;
-float: left;
-}
-
 .col-1 {
-  -ms-flex: 0 0 13.333333%;
-  flex: 0 0 13.333333%;
-  max-width: 13.333333%;
+  -ms-flex: 0 0 8.333333%;
+  flex: 0 0 8.333333%;
+  max-width: 8.333333%;
 }
 
 .col-2 {
@@ -146,16 +100,16 @@ float: left;
 }
 
 .col-3 {
-  -ms-flex: 0 0 21%;
-  flex: 0 0 21%;
-  max-width: 21%;
+  -ms-flex: 0 0 28%;
+  flex: 0 0 28%;
+  max-width: 28%;
  
 }
 
 .col-4 {
-  -ms-flex: 0 0 43%;
-  flex: 0 0 43%;
-  max-width: 43%;
+  -ms-flex: 0 0 43.5%;
+  flex: 0 0 43.5%;
+  max-width: 43.5%;
 
 }
 
@@ -169,18 +123,11 @@ float: left;
 
 
 .col-6 {
-  -ms-flex: 0 0 88%;
-  flex: 0 0 88%;
-  max-width: 88%;
+  -ms-flex: 0 0 90%;
+  flex: 0 0 90%;
+  max-width: 90%;
 
 }
-
-.col-7 {
-	-ms-flex: 0 0 95%;
-	flex: 0 0 95%;
-	max-width: 95%;
-  
-  }
 
 @media(max-width: 750px){
 
@@ -190,20 +137,10 @@ float: left;
 
 }
 
-.col-1,.col-2,.col-3,.col-4, .col-5, .col-6, .col-7{
+.col-1,.col-2,.col-3,.col-4, .col-5, .col-6{
  -ms-flex: 0 0 90%;
   flex: 0 0 90%;
   max-width: 90%;
 }
-
-.row_2{
-	width:100%;
-
-}
-
-.option_select{
-	width: 100%;
-}
-
 
 }
