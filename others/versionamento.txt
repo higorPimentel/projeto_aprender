@@ -18,3 +18,4 @@ git checkout -b MinhaNovaBrach
 git commit -m 'Comentário do commit da minha nova branch'
 git push --set-upstream origin MinhaNovaBrach
 git checkout  <MinhaNovaBrach> - acessar branch
+git branch -d nome_do_branch -deletar
