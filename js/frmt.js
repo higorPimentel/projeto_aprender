@@ -1,9 +1,14 @@
-let cx_text_foco = document.querySelector(".frm_registro")
+
+let ico_opcoes = document.querySelector("#ico_opcoes")
+ico_opcoes.addEventListener('click', exibe_menu_opc,true)
 
 
-cx_text_foco.addEventListener('focus', insere_foco_txt,true)
-cx_text_foco.addEventListener('blur', remove_foco_txt,true)
 
+function exibe_menu_opc(){
+
+    $('#container_menu_opc').css('display','block')
+  
+}
 
 
 

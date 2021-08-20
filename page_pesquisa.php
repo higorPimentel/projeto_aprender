@@ -13,6 +13,7 @@
     $_SESSION['title_page'] = 'Pesquisar Temas';
      include_once('includes/topo.php');
      include_once('includes/header_sistema.php');
+     include_once('includes/menu_opcoes.php');
 
 
 

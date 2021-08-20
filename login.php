@@ -55,6 +55,13 @@
 
 ?>
 
+<script>
+
+    let cx_text_foco = document.querySelector(".frm_registro")
+    cx_text_foco.addEventListener('focus', insere_foco_txt,true)
+    cx_text_foco.addEventListener('blur', remove_foco_txt,true)
+
+</script>
 
 
 
