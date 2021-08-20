@@ -1,0 +1,8 @@
+
+// criar tag
+git tag -a <name> -m <message>
+git show <name>
+
+//releases
+git push origin <name>
+
