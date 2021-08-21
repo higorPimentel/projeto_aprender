@@ -92,10 +92,9 @@ body{
 .opc_menu{
     display: block;
     float: right;
-    margin-right: 10px;
+    margin-right: -40px;
     margin-top: 10px;
     width:290px;
-
  
 }
 
@@ -113,22 +112,47 @@ body{
    
 }
 
+.opcs_prof{   
+    position: fixed;
+    top:70px;
+    right: 70px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 10px 25px;
+    padding-left: 40px;
+    color:#5e4d4d;
+    height: 40px;
+    width: 100px;
+    display: none;
+    z-index: 6;
+}
+
+#btn_fechar_profile{
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+  
+}
+
 #cont_cx_pesquisa{
     width: 60%;
     margin-left: 60px;
     display: inline-block;
     margin-top: -50px;
-   
-     
+
 }
 
 #cx_pesquisa{
     margin-bottom: -50px;
+    box-shadow: 0px 0px 10px  #CDB5CD;
+
 }
 
 #container_ico{
     margin-left: 30px;
+    margin-top: 20px;
     display: inline-block;
+   
 
 }
 
@@ -136,25 +160,51 @@ body{
     font-size: 2.5em;
     display: inline-block;
     cursor:pointer;
+ 
    
 }
 
+#ico_exibe_menu{
+    display: inline-block;
+    padding: 5px;
+
+}
+
+.barr_menu{
+    width:20px;
+    height: 2px;
+    background-color: #645151;
+    margin-top: 4px;
+
+}
+
+#ico_fechar_menu{
+    display: none;
+    font-size:25px;
+    color: #645151;
+    padding: 0px 8px;
+
+
+}
+
 #ico_logo{
+    width: 5px;
     display: inline-block;
     margin-left: 20px;
 }
 
 #img_menu{
-    width: 20px;
+    width: 10px;
 }
 
 .opc_sub_menu{
     position: absolute;
     display: inline-block;
-    margin-top: 80px;
+    margin-top: 100px;
     font-weight: 400;
     color:#828282;
     left:30px;
+   
 }
 
 
@@ -162,11 +212,14 @@ body{
     margin-top: 10px;
     padding-bottom: 5px;
     cursor: pointer;
+    
+
 }
 
 .opc_sub_menu li:hover{
     color:#4F4F4F;
     border-bottom: 1px solid  #CFCFCF;
+   
 } 
 
 
@@ -177,6 +230,7 @@ body{
     top:70px;
     background-color: #1c1c1cb7;
     display: none;
+    z-index: 5;
 }
 
 #barra_opc{
@@ -204,10 +258,98 @@ body{
 }
 
 
+.container_table{
+    margin-left: 100px;
+    display:block;
+    overflow:auto;
+    border:solid 1px rgb(231, 228, 228);
+    border-radius:5px;
+    background-color:rgb(255, 255, 255); 
+    padding: 20px;
+    margin-top: 10px;
+ 
+}
+
+.frmt_tabela_fretes {
+    border:solid 1px #f0d8d8;
+    margin-top:5px ;
+    border-radius: 30px;
+    width:100%;
+    
+}
 
 
+.header_table{
+    border:solid 1px #f0d8d8;
+
+}
+
+.frmt_tabela_fretes th {
+    background-color: #f3f0f0;
+    font-weight: bold;
+    color:#9b5b5b;
+    padding:8px 40px;
+    font-size: 13px;
+    
+    
+}
+    
+.frmt_tabela_fretes td { 
+    text-align: center;
+padding: 10px;
+    font-size: 15px;
+    cursor:pointer;
+}
+    
+
+.frmt_tabela_fretes tr:hover{
+    background-color:rgba(240,240,240,1);  
+}
+
+    
+    
+.styline_line_table_2{
+    background-color:rgb(248, 248, 248);
+        
+}
+
+#inf_registro{
+
+    color: #7c7070;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+#opc_logof{
+    cursor: pointer;    
+}
+
+#opc_logof:hover{
+    color:rgb(50, 141, 194);
+    transition: 0.4s;
+    text-decoration: underline;
+}
 
 
+#btn_pesquisa{
+    margin-right: -67px;
+    margin-top: -24px;
+    padding: 8px 15px;
+    padding-bottom: 4px;
+    float: right;
+    background-color: white;
+    border:solid 1px  #d4cece;
+    cursor: pointer;
+}
+
+#btn_pesquisa:hover{
+    background-color: #eeeeee;
+    transition: 0.5s;
+}
+
+#opc_profile{
+    cursor: pointer;
+}
 
 #msg_erro{
     position: fixed;

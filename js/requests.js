@@ -1,7 +1,5 @@
 
 
-let btn_exect_log = document.querySelector("#btn_exect_log")
-btn_exect_log.addEventListener('click', exect_log,true)
 
 
 
@@ -49,6 +47,113 @@ function exect_log(){
 
             })
 
+
+}
+
+
+
+function load_cad_pesquisa(){
+
+                let type_request = 2;
+                let type_filter = 'todos';
+
+
+                $.ajax({
+                    method:'POST',
+                    url:'class/functions.php',
+                    data:
+                    {
+                        type_request:type_request,
+                        type_filter:type_filter
+                    
+                    },
+                    success:function(retorno){
+
+                          data_return = JSON.parse(retorno) 
+                          dados_ret_temp =  data_return
+                                           
+
+                           mont_table()
+
+                    }
+
+                })
+
+
+}
+
+
+function mont_table(){
+
+
+	var cod = 1	
+	let itm = 0
+	// var new_table = document.querySelector('.frmt_tabela_fretes')
+	 tbl = '';	
+	 tbl +='<tr class="header_table">'	
+	 tbl +='<th>Categoria / Tipo</th>'
+	 tbl +='<th>Descrição</th>'
+	 tbl +='</tr>'
+	
+	
+	for(let i = 0; i < dados_ret_temp.length; i++) {
+
+				if (cod === 3) {
+					cod = 1
+				}
+				
+
+				if (cod === 1) {
+					var cls = 'styline_line_table_1'
+				} else if (cod === 2) {
+					var cls = 'styline_line_table_2'
+				}
+
+
+			tbl +=`<tr class="${cls}">`																	//altera =2	
+			tbl +=`<td id=it${dados_ret_temp[i]['id_pesquisa']}>${dados_ret_temp[i]['tipo_categoria']}</td>`
+			tbl +=`<td id=it${dados_ret_temp[i]['id_pesquisa']}>${dados_ret_temp[i]['descricao']}</td>`
+					
+						
+			tbl +='</tr>'
+
+			cod++;
+			itm ++;	
+			
+
+	}
+
+
+
+	
+
+	$('#table_list').html(tbl);
+    $('#inf_registro').html(`Registros Listados: ${itm}`);
+
+
+}
+
+
+
+function execut_logof(){
+
+  
+    let type_request = 3;
+
+    $.ajax({
+        method:'POST',
+        url:'class/functions.php',
+        data:
+        {
+            type_request:type_request
+                    
+        },
+        success:function(retorno){
+
+                window.location.href = 'login.php'
+        }
+
+    })
 
 }
 

@@ -20,11 +20,13 @@
         if($type_request ==1) {
             echo(executa_login());
         } elseif ($type_request ==2) {
-            echo(pesquisa_total());
+            echo(load_cad_pesquisa());
+        } elseif ($type_request ==3) {
+            echo(executa_logof());
         }
 
 
-
+//1
 function executa_login(){
 
     // GERAR PASSWORD DO TIPO CRYPT
@@ -66,6 +68,44 @@ function executa_login(){
     return  $sucess;
 }
 
+
+
+//2
+
+function load_cad_pesquisa(){
+
+    $type_filter = $_POST['type_filter'];
+
+
+        if($type_filter == 'todos') {            
+            $sql = "SELECT * FROM tb_cad_pesquisa";
+
+        } else {
+
+        }
+
+
+  
+    $processa_query = mysqli_query($_SESSION['cn'],$sql);
+
+
+        foreach ($processa_query as $row) {
+            $dados []= $row;
+        }
+
+        return json_encode($dados);
+
+
+
+}
+
+
+//3
+function executa_logof() {
+
+    $_SESSION['user_atv'] = 0;
+
+}
 
 
 ?>

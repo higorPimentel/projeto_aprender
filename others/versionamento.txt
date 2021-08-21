@@ -10,6 +10,9 @@ git push origin <name>
 // acessar
 git checkout <name>
 
+TRANSITAR ENTRE AS BRANCHS - TAGS
+checkout
+
 
 
 BRANCHS

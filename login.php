@@ -61,6 +61,10 @@
     cx_text_foco.addEventListener('focus', insere_foco_txt,true)
     cx_text_foco.addEventListener('blur', remove_foco_txt,true)
 
+
+    let btn_exect_log = document.querySelector("#btn_exect_log")
+    btn_exect_log.addEventListener('click', exect_log,true)
+
 </script>
 
 

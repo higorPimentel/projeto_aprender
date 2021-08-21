@@ -24,11 +24,22 @@
 <body>
 
 
-                <div>
+        <form class="frm_registro" style='border:none'>
 
-                        iniciando conteúdo
+                    <div  class="row">	
+                                <div class="grupo_cxs col-6" id="grupo_cx_id">
+                                
+                                    <div class='container_table'>                                            
+                                    
+                                        <table id='table_list'  class='frmt_tabela_fretes'>
+                                                    <h1 id='inf_registro'>Registros Listados:00</h1>	 	
+                                            </table>
+                                    </div>
+                                </div>
+                        </div>
 
-                </div>
+
+           </form>
 
 
 <?php 
@@ -36,6 +47,21 @@
     include_once('includes/scripts.php');
 
 ?>
+
+<script>
+
+window.addEventListener('load',inicio_app)
+
+
+function inicio_app(){
+   
+     load_cad_pesquisa()
+
+
+}
+
+
+</script>
 
 
 </body>
