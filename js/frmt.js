@@ -28,6 +28,11 @@ let btn_pesquisa = document.querySelector("#btn_pesquisa")
 btn_pesquisa.addEventListener('click', filter_item,true)
 
 
+let cx_pesquisa = document.querySelector("#cx_pesquisa")
+cx_pesquisa.addEventListener('keyup', clear_filter,true)
+
+
+
 
 window.addEventListener('load',inicio_app)
 
@@ -39,6 +44,19 @@ function inicio_app(){
     type_filter = 1
     nme_opc = ""
     
+
+}
+
+function clear_filter(){
+    
+    let pesquisa =   $('#cx_pesquisa').val()
+
+        if(pesquisa == '') {
+
+            dados_ret_temp =  data_return
+           mont_table()
+        }
+
 
 }
 

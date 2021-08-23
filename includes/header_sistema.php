@@ -56,7 +56,7 @@
 </div>
 
                     <div class='opcs_prof'>
-                        <div id='opc_profile_exit'>Sair</div>                                    
+                        <div id='opc_profile_exit' onclick ='execut_logof()' >Sair</div>                                    
                     </div>
     <script>
 

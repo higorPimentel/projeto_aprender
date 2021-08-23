@@ -130,8 +130,11 @@ body{
 #btn_fechar_profile{
     font-size: 1.5em;
     cursor: pointer;
-    display: none;
-  
+    display: none;  
+}
+
+#opc_profile_exit{
+    cursor: pointer;
 }
 
 #cont_cx_pesquisa{
