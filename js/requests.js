@@ -39,7 +39,7 @@ function exect_log(){
                             $('#msg_erro').html('Senha Incorreta!!');
                             exibe_erro()
                         }  else if(retorno ==1) { 
-                            window.location.href = 'page_pesquisa.php'
+                            window.location.href = 'page_pesquisa.php?idx=1'
 
                         }
 
@@ -52,10 +52,33 @@ function exect_log(){
 
 
 
-function load_cad_pesquisa(){
+function load_table_pesquisa(){
 
-                let type_request = 2;
-                let type_filter = 'todos';
+    
+            let type_filter = 'todos';
+            let x = part_txt = window.location.href
+            let y = x.indexOf('page_')
+            let y2 = x.indexOf('php')
+            let z = x.substr(y + 5,y2 - y - 6 )    
+
+
+
+                if(z == 'pesquisa') {
+                     type_request = 2;
+                     idx_acces='id_pesquisa'
+                } else if(z == 'livros') {
+                    type_request = 4;
+                    idx_acces='id_livro'
+                } else if(z == 'cursos') {
+                    type_request = 5;
+                    idx_acces='id_curso'
+                }
+
+                
+                
+                
+                
+              
 
 
                 $.ajax({
@@ -81,6 +104,8 @@ function load_cad_pesquisa(){
 
 
 }
+
+
 
 
 function mont_table(){
@@ -111,8 +136,8 @@ function mont_table(){
 
 
 			tbl +=`<tr class="${cls}">`																	//altera =2	
-			tbl +=`<td id=it${dados_ret_temp[i]['id_pesquisa']}>${dados_ret_temp[i]['tipo_categoria']}</td>`
-			tbl +=`<td id=it${dados_ret_temp[i]['id_pesquisa']}>${dados_ret_temp[i]['descricao']}</td>`
+			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['tipo_categoria']}</td>`
+			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['descricao']}</td>`
 					
 						
 			tbl +='</tr>'
@@ -180,7 +205,7 @@ function desabilita_sucess(){
 
 function exibe_duvida() {
 	$('#msg_alerta').css('display','block')
-	setTimeout(desabilita_duvida,timr_duvida)
+	setTimeout(desabilita_duvida,4000)
 }
 
 function desabilita_duvida(){

@@ -24,7 +24,7 @@
             <div id='cont_cx_pesquisa'>
                 <div class="row blco_pesquisa">	
                         <div class="grupo_cxs col-6">
-                            <input class="cx_text" type="text" id="cx_pesquisa" autofocus placeholder='Pesquisar'>	
+                            <input class="cx_text" type="text" id="cx_pesquisa" autofocus placeholder='Pesquisar descrição'>	
                             <input type="button" id="btn_pesquisa" value='&#128269;' >										
                         </div>	
                 </div>
@@ -42,7 +42,7 @@
         
                   
 
-    <nav class='opc_sub_menu'>
+        <nav class='opc_sub_menu'>
             <ul>
                 <li id='opc_todos'>&#10162; Todos</li>
                 <li id='opc_hortalica'>&#10148; Hortaliça</li>
@@ -50,6 +50,13 @@
                 <li id='opc_erva_medic'>&#10148; Plantas Medicinais</li>               
             </ul>
         </nav>
+
+           <div class='opc_btns_2'>     
+                <div id='opc_curso_video'>Curso em Video	&#10148;</div>
+          </div>
+      <!-- 
+       <div id='opc_curso_listagem'>Curso em Video</div>
+         -->
 
     
 

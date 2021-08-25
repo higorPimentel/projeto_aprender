@@ -1,15 +1,13 @@
 <div id='container_menu_opc'>
 
     <div id='barra_opc'>
-
-
         <nav class='menu_nav'>
             <ul>
-                <li>Cursos</li>
-                <li>Tutorias</li>
-                <li>Livros</li>
-                <li>Videos</li>
-                <li>Pesquisas</li>
+                <a href="page_cursos.php"><li>Cursos</li></a>
+                <a href="#"><li>Tutorias</li></a>
+                <a href="page_livros.php"><li>Livros</li></a>
+                <a href="#"><li>Videos</li></a>
+                <a href="page_pesquisa.php"><li>Pesquisas</li></a>
             </ul>
         </nav>
 

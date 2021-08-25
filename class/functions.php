@@ -23,6 +23,10 @@
             echo(load_cad_pesquisa());
         } elseif ($type_request ==3) {
             echo(executa_logof());
+        } elseif ($type_request ==4) {
+            echo(load_cad_livro());
+        } elseif ($type_request ==5) {
+            echo(load_cad_curso());
         }
 
 
@@ -104,6 +108,60 @@ function load_cad_pesquisa(){
 function executa_logof() {
 
     $_SESSION['user_atv'] = 0;
+
+}
+
+
+// 4
+function load_cad_livro(){
+
+    $type_filter = $_POST['type_filter'];
+
+
+        if($type_filter == 'todos') {            
+            $sql = "SELECT * FROM tb_cad_livro";
+
+        } else {
+
+        }
+
+
+  
+    $processa_query = mysqli_query($_SESSION['cn'],$sql);
+
+
+        foreach ($processa_query as $row) {
+            $dados []= $row;
+        }
+
+        return json_encode($dados);
+
+}
+
+//5
+function load_cad_curso() {
+
+    $type_filter = $_POST['type_filter'];
+
+
+        if($type_filter == 'todos') {            
+            $sql = "SELECT * FROM tb_cad_curso";
+
+        } else {
+
+        }
+
+
+  
+    $processa_query = mysqli_query($_SESSION['cn'],$sql);
+
+
+        foreach ($processa_query as $row) {
+            $dados []= $row;
+        }
+
+        return json_encode($dados);
+
 
 }
 

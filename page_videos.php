@@ -55,7 +55,8 @@ window.addEventListener('load',inicio_app)
 
 function inicio_app(){
    
-    load_table_pesquisa()
+     load_table_pesquisa()
+
 
 }
 

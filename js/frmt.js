@@ -43,9 +43,11 @@ function inicio_app(){
     ativ_menu = 0
     type_filter = 1
     nme_opc = ""
+  //  index_page  = 5
     
 
 }
+
 
 function clear_filter(){
     
