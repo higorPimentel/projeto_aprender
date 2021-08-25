@@ -367,7 +367,7 @@ padding: 10px;
     margin-left: 15px;
 }
 
-#opc_curso_video{
+.opc_curso_btns{
     border:solid 1px #CFCFCF;
     padding: 10px;
     display: inline-block;
@@ -379,6 +379,34 @@ padding: 10px;
 #opc_curso_video:hover{
     box-shadow: 0px 0px 10px #EED2EE;
 }
+
+.container_videos{
+    border: 1px solid #d3d0d0; 
+    background-color: #E8E8E8;
+    display: inline-block;
+    float: right;
+    width: 300px;
+    margin-top: 30px;
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+.table_video_principal{
+    background-color: #E8E8E8;
+    border: 1px solid #d3d0d0; 
+}
+
+.qdo_video_principal{
+    border:solid;
+    margin-left: 180px;
+}
+
+.qdo_video{
+    margin-top: 20px;
+    border-bottom: 1px solid #CFCFCF;
+    padding-bottom: 5px;
+}
+
 
 #msg_erro{
     position: fixed;

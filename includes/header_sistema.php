@@ -52,7 +52,8 @@
         </nav>
 
            <div class='opc_btns_2'>     
-                <div id='opc_curso_video'>Curso em Video	&#10148;</div>
+               <a href="page_videos.php"><div id='opc_curso_video' class='opc_curso_btns'>Curso em Video &#10148;</div></a>
+               <a href="page_cursos.php"><div id='opc_curso_list' class='opc_curso_btns'>Curso em Listagem (Download) &#10148;</div></a>
           </div>
       <!-- 
        <div id='opc_curso_listagem'>Curso em Video</div>

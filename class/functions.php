@@ -98,6 +98,7 @@ function load_cad_pesquisa(){
         }
 
         return json_encode($dados);
+       //return print_r($dados);
 
 
 

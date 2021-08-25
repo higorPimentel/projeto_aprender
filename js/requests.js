@@ -92,6 +92,10 @@ function load_table_pesquisa(){
                     },
                     success:function(retorno){
 
+                        
+                               // console.log(retorno)
+                               // return
+                        
                           data_return = JSON.parse(retorno) 
                           dados_ret_temp =  data_return
                                            

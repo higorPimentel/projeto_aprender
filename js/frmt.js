@@ -49,6 +49,10 @@ function inicio_app(){
 }
 
 
+function exct_teste(){
+    alert('ola')
+}
+
 function clear_filter(){
     
     let pesquisa =   $('#cx_pesquisa').val()
