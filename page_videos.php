@@ -91,7 +91,7 @@ function seleciona_reg_table_video(obj){
 
 
             tbl_video = '';
-            tbl_video +=`<iframe width="90%" height="415" src="${elemnt}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+            tbl_video +=`<iframe width="90%" height="415" class='qdo_video_principal2' src="${elemnt}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         
              $('.qdo_video_principal').css('display','none');       
              $('#table_list').html(tbl_video);

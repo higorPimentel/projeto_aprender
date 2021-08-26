@@ -168,7 +168,7 @@ function mont_table_video(){
 
         tbl_video +='<div class="qdo_video">'	
         tbl_video +=`<h1 class='tit_video_min'>${dados_ret_temp[i].descricao}</h1>`
-        tbl_video +=`<iframe width="300" height="200" src="${dados_ret_temp[i].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        tbl_video +=`<iframe class='video_min' width="300" height="200" src="${dados_ret_temp[i].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         tbl_video +=`<input onclick="seleciona_reg_table_video(this)" class="btn_video" id=${dados_ret_temp[i].url_video} name="${dados_ret_temp[i].descricao}" type="button" value="Acessar Video">`
         tbl_video +='</div>'	
         
