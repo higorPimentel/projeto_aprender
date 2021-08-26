@@ -52,13 +52,39 @@
 
 window.addEventListener('load',inicio_app)
 
+let table_select = document.querySelector("#table_list")
+table_select.addEventListener('click', seleciona_reg_table,true)
+
+
 
 function inicio_app(){
    
      load_table_pesquisa()
 
-
 }
+
+function seleciona_reg_table(event){
+	
+
+	let elemnt =  event.srcElement.id
+	let  type_element  = elemnt.substr(0,2)
+
+
+        if(type_element =='it') { 
+			id_list = elemnt.substr(2,11)      
+            
+                     
+               window.location.href = dados_ret_temp[id_list - 1].link_download
+               
+                $('#msg_alerta').html('Download efetuado com exito &#10003;');
+                exibe_duvida()
+              
+
+        }
+
+        
+
+    }
 
 
 </script>

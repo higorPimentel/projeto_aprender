@@ -31,7 +31,7 @@
                                 
                                     <div class='container_table'>                                            
                                     
-                                        <table id='table_list'  class='frmt_tabela_fretes'>
+                                           <table id='table_list'  class='frmt_tabela_fretes'>
                                                     <h1 id='inf_registro'>Registros Listados:00</h1>	 	
                                             </table>
                                     </div>
@@ -63,6 +63,9 @@ function inicio_app(){
      $('#opc_curso_video').css('display','inline-block') 
      load_table_pesquisa()
 
+
+
+
 }
 
 
@@ -70,15 +73,14 @@ function inicio_app(){
 function seleciona_reg_table(event){
 	
 
-      
-
 	let elemnt =  event.srcElement.id
 	let  type_element  = elemnt.substr(0,2)
 
 		if(type_element =='it') { 
-			id_list = elemnt.substr(2,11)          
-         
-               window.location.href = dados_ret_temp[id_list].link_download
+			id_list = elemnt.substr(2,11)      
+            
+                     
+               window.location.href = dados_ret_temp[id_list - 1].link_download
                
                 $('#msg_alerta').html('Download efetuado com exito &#10003;');
                 exibe_duvida()

@@ -118,10 +118,10 @@ body{
     top:70px;
     right: 70px;
     display: inline-block;
-    background-color: rgba(0, 0, 0, 0.178);
+    background-color: rgba(0, 0, 0, 0.452);
     padding: 10px 25px;
     padding-left: 40px;
-    color:#5e4d4d;
+    color:white;
     height: 40px;
     width: 100px;
     display: none;
@@ -323,7 +323,6 @@ padding: 10px;
 }
 
 #inf_registro{
-
     color: #7c7070;
     margin-bottom: 20px;
     font-weight: 500;
@@ -360,8 +359,7 @@ padding: 10px;
     cursor: pointer;
 }
 
-.opc_btns_2{
-   
+.opc_btns_2{   
     padding: 10px;
     margin-top: 200px;
     margin-left: 15px;
@@ -376,8 +374,12 @@ padding: 10px;
     display: none;
 }
 
-#opc_curso_video:hover{
+.opc_curso_btns:hover{
     box-shadow: 0px 0px 10px #EED2EE;
+}
+
+#opc_curso_list{
+    margin-left: -15px;
 }
 
 .container_videos{
@@ -387,8 +389,31 @@ padding: 10px;
     float: right;
     width: 300px;
     margin-top: 30px;
+    margin-right: -20px;
     padding: 5px 15px;
     border-radius: 5px;
+}
+
+.btn_video{
+    padding:5px 15px;
+    margin-top: 10px;
+    background-color: #363636;
+    border:solid 1px #696969;
+    color:#FFE1FF;
+    font-weight: 600;  
+    cursor:pointer;  
+}
+
+.tit_video_min{
+    color:#696969;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.btn_video:hover{
+    background-color: #36363600;    
+    color:#696969;
+    transition: 0.5s;
 }
 
 .table_video_principal{
@@ -398,12 +423,12 @@ padding: 10px;
 
 .qdo_video_principal{
     border:solid;
-    margin-left: 180px;
+    margin-left: 60px;
 }
 
 .qdo_video{
     margin-top: 20px;
-    border-bottom: 1px solid #CFCFCF;
+    border-bottom: 1px solid #b3aeae;;
     padding-bottom: 5px;
 }
 

@@ -32,12 +32,12 @@
                                     <div class='container_table table_video_principal'>                                            
                                     
                                          <table id='table_list'  class='frmt_tabela_fretes'>
-                                                    <h1 id='inf_registro'>Nome do Video...</h1>
+                                                    <h1 id='inf_registro'>Video Teste...</h1>
                                                     
                                                     <!--
                                                        <embed src="https://www.youtube.com/watch?v=u3YPNWJvdo0" type="">
                                                     -->
-                                                    <iframe  class='qdo_video_principal' width="760" height="415" src="https://www.youtube.com/embed/SvyseptFqpI" 
+                                                    <iframe  class='qdo_video_principal' width="90%" height="415" src="https://www.youtube.com/embed/3AGB8uovr9c" 
                                                         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
                                                         clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                                                     </iframe>
@@ -45,51 +45,9 @@
                                     </div>
                                 </div>
 
+                            <div class='container_videos'>   
 
-                            <div class='container_videos'>
-                                                                          
-                                                    <div class='qdo_video' >
-                                                        <h1>titulo video</h1>    
-                                                            <iframe  onclick='exct_teste()' width="300" height="200" src="https://www.youtube.com/embed/SvyseptFqpI" 
-                                                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                                            </iframe>
-                                                    </div>
-                                                    
-                                                    <div class='qdo_video'>
-                                                        <h1>titulo video</h1>    
-                                                            <iframe width="300" height="200" src="https://www.youtube.com/embed/SvyseptFqpI" 
-                                                                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                                                clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                                            </iframe>
-                                                    </div>
-
-                            </div>                            
-
-                                <!--
-                                <div class="grupo_cxs col-2" id="grupo_cx_id">
-                                
-                                <div class='container_table'>                                            
-                                
-                                     <table id='table_list'  class='frmt_tabela_fretes'>
-                                                <h1 id='inf_registro'>Nome do Video...</h1>
-
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SvyseptFqpI" 
-                                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                                </iframe>
-
-                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/SvyseptFqpI" 
-                                                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
-                                                    clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-                                                </iframe>
-                                        </table>
-                                </div>
-                            </div>
-                      
-                      
-                                                -->
-                      
+                            </div>     
                       
                       </div>
 
@@ -108,11 +66,37 @@
 window.addEventListener('load',inicio_app)
 
 
-function inicio_app(){
-   
-    $('#opc_curso_list').css('display','inline-block') 
-     load_table_pesquisa()
 
+
+
+
+function inicio_app(){
+
+     
+     $('#opc_curso_list').css('display','inline-block') 
+     $('.opc_btns_2').css('margin-top','35px') 
+     $('.opc_sub_menu').css('display','none') 
+   //  mont_table_video()
+     load_table_pesquisa()   
+
+
+}
+
+function seleciona_reg_table_video(obj){
+
+    console.log(obj)
+    
+    let elemnt =  obj.id
+	let  name_video  = obj.name
+
+
+            tbl_video = '';
+            tbl_video +=`<iframe width="90%" height="415" src="${elemnt}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        
+             $('.qdo_video_principal').css('display','none');       
+             $('#table_list').html(tbl_video);
+             $('#inf_registro').html(name_video);
+               
 
 }
 

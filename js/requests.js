@@ -1,8 +1,5 @@
 
 
-
-
-
 function exect_log(){
     
         let user = $('#cx_user').val()
@@ -72,15 +69,12 @@ function load_table_pesquisa(){
                 } else if(z == 'cursos') {
                     type_request = 5;
                     idx_acces='id_curso'
+                } else if(z == 'videos') { 
+                    type_request = 5;
+                    idx_acces='id_video'
                 }
 
                 
-                
-                
-                
-              
-
-
                 $.ajax({
                     method:'POST',
                     url:'class/functions.php',
@@ -100,7 +94,13 @@ function load_table_pesquisa(){
                           dados_ret_temp =  data_return
                                            
 
-                           mont_table()
+                          if(idx_acces =='id_video') {
+                            mont_table_video()
+                          } else {
+                            mont_table()
+                          }
+
+                         
 
                     }
 
@@ -108,7 +108,6 @@ function load_table_pesquisa(){
 
 
 }
-
 
 
 
@@ -139,6 +138,7 @@ function mont_table(){
 				}
 
 
+              
 			tbl +=`<tr class="${cls}">`																	//altera =2	
 			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['tipo_categoria']}</td>`
 			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['descricao']}</td>`
@@ -153,16 +153,31 @@ function mont_table(){
 	}
 
 
-
-	
-
 	$('#table_list').html(tbl);
     $('#inf_registro').html(`Registros Listados: ${itm}`);
 
 
 }
 
+function mont_table_video(){   	
 
+   
+    tbl_video = '';	
+	
+    for (let i = 0; i < dados_ret_temp.length; i++) {
+
+        tbl_video +='<div class="qdo_video">'	
+        tbl_video +=`<h1 class='tit_video_min'>${dados_ret_temp[i].descricao}</h1>`
+        tbl_video +=`<iframe width="300" height="200" src="${dados_ret_temp[i].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        tbl_video +=`<input onclick="seleciona_reg_table_video(this)" class="btn_video" id=${dados_ret_temp[i].url_video} name="${dados_ret_temp[i].descricao}" type="button" value="Acessar Video">`
+        tbl_video +='</div>'	
+        
+    }
+    
+
+     $('.container_videos').html(tbl_video);
+
+}
 
 function execut_logof(){
 
