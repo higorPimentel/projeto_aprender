@@ -215,8 +215,7 @@ body{
 .opc_sub_menu li{ 
     margin-top: 10px;
     padding-bottom: 5px;
-    cursor: pointer;
-    
+    cursor: pointer;    
 
 }
 
@@ -546,6 +545,63 @@ padding: 10px;
 
     .btn_video{
         display: none;
+    }
+
+}
+
+@media (max-width:750px) { 
+
+    .frm_login{
+        width: 85%;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container_principal{
+      margin-top:110px;
+    }
+
+    .opc_sub_menu{
+       display: block;
+        margin-top: 8px;
+        left: 0;     
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.548);
+    }
+
+    .opc_sub_menu li{ 
+        margin-top: 10px;
+        padding-bottom: 5px;
+        cursor: pointer;    
+        font-size: 1.2em;
+        margin-left: 20%;
+        color:white;
+    
+    }
+
+    .opc_sub_menu li:hover{
+        border:none;
+        color:#CFCFCF;
+    } 
+    
+
+    .frm_list{
+     
+        margin-top: 200px;
+        margin-left: 0px;
+        width:90%;
+
+    }
+
+    .container_table{
+     margin-left: -20px;
+     margin-right: -20px;
+
+    }
+
+    .opc_menu{
+        display: none;
+   
     }
 
 }

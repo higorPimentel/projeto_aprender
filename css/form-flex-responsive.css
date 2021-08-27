@@ -144,9 +144,23 @@ width:100%;
 }
 
 .col-1,.col-2,.col-3,.col-4, .col-5,.col-5_2, .col-6{
- -ms-flex: 0 0 90%;
-  flex: 0 0 90%;
-  max-width: 90%;
+ -ms-flex: 0 0 95%;
+  flex: 0 0 95%;
+  max-width: 95%;
+
+}
+
+.btns{
+	width: 100%;
+	height: 35px;
+}
+
+.cx_text{
+	height: 35px;
+}
+
+#btn_exect_log{
+	margin-left: -10px;
 }
 
 }

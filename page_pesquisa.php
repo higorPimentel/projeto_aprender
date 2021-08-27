@@ -24,7 +24,7 @@
 <body>
 
 
-        <form class="frm_registro" style='border:none'>
+        <form class="frm_registro frm_list" style='border:none'>
 
                     <div  class="row">	
                                 <div class="grupo_cxs col-6" id="grupo_cx_id">
@@ -33,7 +33,7 @@
                                     
                                         <table id='table_list'  class='frmt_tabela_fretes'>
                                                     <h1 id='inf_registro'>Registros Listados:00</h1>	 	
-                                            </table>
+                                        </table>
                                     </div>
                                 </div>
                         </div>
