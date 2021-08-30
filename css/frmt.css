@@ -616,6 +616,12 @@ padding: 10px;
    
     }
 
+    .opc_btns_2{   
+        position: fixed;
+        bottom: 20px;
+        background-color: gray;
+    }
+
 }
 
 @media (max-width:590px) { 
