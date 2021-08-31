@@ -165,7 +165,7 @@ function filter_item(){
 
 function reinicia_opcoes_menu(){
 
-     $('#opc_todos').html('&#10148; Todos') 
+     $('#opc_todos').html('&#10148; Categorias') 
      $('#opc_hortalica').html('&#10148; Hortaliça') 
      $('#opc_culinaria').html('&#10148; Culinária') 
      $('#opc_erva_medic').html('&#10148; Plantas Medicinais') 
@@ -173,7 +173,7 @@ function reinicia_opcoes_menu(){
 
         if(elemnt == 'opc_todos') {
             type_filter = 1
-            nme_opc = 'Todos'
+            nme_opc = 'Categorias'
         } else if(elemnt == 'opc_hortalica') {
             type_filter = 2
             nme_opc = 'Hortaliça'

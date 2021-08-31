@@ -114,6 +114,9 @@ function load_table_pesquisa(){
 function mont_table(){
 
 
+    
+
+
 	var cod = 1	
 	let itm = 0
 	// var new_table = document.querySelector('.frmt_tabela_fretes')

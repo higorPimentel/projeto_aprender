@@ -383,7 +383,9 @@ padding: 10px;
 
 .container_videos{
     border: 1px solid #d3d0d0; 
-    background-color: #E8E8E8;
+   background-color: #E8E8E8;
+    max-height: 900px;
+    overflow:auto;
     display: inline-block;
     float: right;
     width: 300px;
@@ -391,6 +393,7 @@ padding: 10px;
     margin-right: -20px;
     padding: 5px 15px;
     border-radius: 5px;
+
 }
 
 .btn_video{
