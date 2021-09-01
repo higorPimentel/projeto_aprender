@@ -439,6 +439,18 @@ padding: 10px;
     padding-bottom: 5px;
 }
 
+.info_system{
+    margin-top: -50px;
+    margin-right:10px;
+    padding-top: 10px;
+    font-size: 1em;
+    float: right;
+    color:rgb(100, 94, 94);
+}
+
+.bloco_info_systm{
+    margin-top: 3px;
+}
 
 #msg_erro{
     position: fixed;
