@@ -114,8 +114,18 @@ function load_table_pesquisa(){
 function mont_table(){
 
 
-    
+            let page_atual = window.location.href
+            let pagina_proc = 'page_pesquisa'
+            let x_index = page_atual.indexOf(pagina_proc)
 
+            let pagina_proc2 = 'page_livros'
+            let x_index2 = page_atual.indexOf(pagina_proc2)
+
+
+
+             console.log(dados_ret_temp)
+
+                   
 
 	var cod = 1	
 	let itm = 0
@@ -124,6 +134,15 @@ function mont_table(){
 	 tbl +='<tr class="header_table">'	
 	 tbl +='<th>Categoria / Tipo</th>'
 	 tbl +='<th>Descrição</th>'
+
+            if(x_index > 3) {
+                tbl +='<th>Opções</th>'
+            }
+
+            if(x_index2 > 3) {
+                tbl +='<th>Download</th>'
+            }
+
 	 tbl +='</tr>'
 	
 	
@@ -146,7 +165,25 @@ function mont_table(){
 			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['tipo_categoria']}</td>`
 			tbl +=`<td id=it${dados_ret_temp[i][idx_acces]}>${dados_ret_temp[i]['descricao']}</td>`
 					
-						
+                 if(x_index > 3) {
+                      tbl +=`<td>
+                                <div onclick="seleciona_video_reg(this)" class="bloco_ico_list"  id=it${dados_ret_temp[i][idx_acces]}>
+                                    <img src='ico/ico_video.svg'>
+                                </div>
+                                <div class="bloco_ico_list">
+                                <img src='ico/ico_download_file.svg'>
+                            </div>
+                            </td>`    
+                 }
+
+                 if(x_index2 > 3) {
+                    tbl +=`<td onclick="seleciona_reg_link(this)" id=it${dados_ret_temp[i][idx_acces]}>                             
+                              <div class="bloco_ico_list">                                
+                                 <img src='ico/ico_download_file.svg'>
+                          </div>
+                          </td>`    
+               }
+
 			tbl +='</tr>'
 
 			cod++;
@@ -171,7 +208,7 @@ function mont_table_video(){
 
         tbl_video +='<div class="qdo_video">'	
         tbl_video +=`<h1 class='tit_video_min'>${dados_ret_temp[i].descricao}</h1>`
-        tbl_video +=`<iframe class='video_min' width="300" height="200" src="${dados_ret_temp[i].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
+        tbl_video +=`<iframe class='video_min' width="250" height="150" src="${dados_ret_temp[i].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
         tbl_video +=`<input onclick="seleciona_reg_table_video(this)" class="btn_video" id=${dados_ret_temp[i].url_video} name="${dados_ret_temp[i].descricao}" type="button" value="Acessar Video">`
         tbl_video +='</div>'	
         

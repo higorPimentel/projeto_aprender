@@ -77,14 +77,33 @@ function seleciona_reg_table(event){
                window.location.href = dados_ret_temp[id_list - 1].link_download
                
                 $('#msg_alerta').html('Download efetuado com exito &#10003;');
-                exibe_duvida()
-              
+                exibe_duvida()              
 
         }
-
         
 
     }
+
+
+function seleciona_reg_link(obj) {
+    
+            let elemnt = obj.id
+            let  type_element  = elemnt.substr(0,2)
+
+
+                if(type_element =='it') { 
+                    id_list = elemnt.substr(2,11)      
+                    
+                            
+                    window.location.href = dados_ret_temp[id_list - 1].link_download
+                    
+                        $('#msg_alerta').html('Download efetuado com exito &#10003;');
+                        exibe_duvida()              
+
+                }
+
+
+}
 
 
 </script>

@@ -38,8 +38,18 @@
                                 </div>
                         </div>
 
-
            </form>
+
+           <div class='container_video_pesq'>
+                <div class='bloc_video'>
+                     <div id='btn_fechar_video'>Fechar</div>
+                         <div id='container_video_pesquisa'>   
+                         <h1 class='tit_video_min'>Titulo</h1>                      
+
+                        </div> 
+                </div>
+
+           </div>
 
          
 <?php 
@@ -50,12 +60,43 @@
 
 <script>
 
+    
+let btn_fechar_video = document.querySelector("#btn_fechar_video")
+btn_fechar_video.addEventListener('click', fechar_video_pesquisa,true)
+
+
 window.addEventListener('load',inicio_app)
 
 
 function inicio_app(){
    
     load_table_pesquisa()
+
+}
+
+function seleciona_video_reg(obj){
+    
+            let elemnt = obj.id
+            let  type_element  = elemnt.substr(0,2)
+
+
+                if(type_element =='it') { 
+                    id_list = elemnt.substr(2,11)      
+                    
+                            
+                    $('.container_video_pesq').css('display','block');  
+
+
+                    tbl_video = '';	
+
+                    tbl_video +='<div class="qdo_video">'	
+                    tbl_video +=`<h1 class='tit_video_min'>${dados_ret_temp[id_list].descricao}</h1>`
+                    tbl_video +=`<iframe class='video_min' width="600" height="315" src="${dados_ret_temp[id_list].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`                  
+                    tbl_video +='</div>'	            
+
+                     $('#container_video_pesquisa').html(tbl_video);
+
+                }
 
 }
 

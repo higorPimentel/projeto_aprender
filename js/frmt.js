@@ -34,6 +34,7 @@ cx_pesquisa.addEventListener('keyup', clear_filter,true)
 
 
 
+
 window.addEventListener('load',inicio_app)
 
 
@@ -80,7 +81,12 @@ function remove_men_prof() {
 }
 
 
+function fechar_video_pesquisa(){
+    
+    $('#container_video_pesquisa').html('');
+    $('.container_video_pesq').css('display','none')  
 
+}
 
 function modify_profile_ret(){
     

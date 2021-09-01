@@ -383,12 +383,12 @@ padding: 10px;
 
 .container_videos{
     border: 1px solid #d3d0d0; 
-   background-color: #E8E8E8;
+     background-color: #E8E8E8;
     max-height: 900px;
     overflow:auto;
     display: inline-block;
     float: right;
-    width: 300px;
+    width: 280px;
     margin-top: 30px;
     margin-right: -20px;
     padding: 5px 15px;
@@ -405,6 +405,26 @@ padding: 10px;
     font-weight: 600;  
     cursor:pointer;  
 }
+
+body::-webkit-scrollbar {
+    width: 7px;               /* width of the entire scrollbar */
+  }
+  
+  body::-webkit-scrollbar-track {
+    background: orange;        /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: blue;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid orange;  /* creates padding around scroll thumb */
+  }
+
+  body {
+    scrollbar-width: 1px;          /* "auto" or "thin" */
+    scrollbar-color: rgb(100, 119, 141) rgba(43, 49, 53, 0.336) ;   /* scroll thumb and track */
+  }
+
 
 .tit_video_min{
     color:#696969;
@@ -450,6 +470,47 @@ padding: 10px;
 
 .bloco_info_systm{
     margin-top: 3px;
+}
+
+.bloco_ico_list{
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.container_video_pesq{
+    position: fixed;
+    top:0;
+    width:100%;
+    height: 100%;
+    background-color: #131125b7;
+    display: none;
+    z-index: 5;
+
+}
+
+.bloc_video{
+    display: inline-block;
+    background-color: white;
+    margin-top: 100px;
+    margin-left: 20%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px 2px rgb(17, 11, 11);
+}
+
+#btn_fechar_video{
+    float: right;
+    background-color: rgb(68, 62, 62);
+    border:solid 1px rgb(68, 62, 62);
+    color: blanchedalmond;
+    cursor:pointer;
+    margin-bottom: 10px;
+    padding: 2px 20px;
+}
+
+#btn_fechar_video:hover{
+    background-color: rgba(68, 62, 62, 0.144);
+    color:rgb(68, 62, 62);
+    transition: 0.5s;
 }
 
 #msg_erro{
