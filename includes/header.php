@@ -7,7 +7,7 @@
                             Desnvolvimento:Higor Pimentel
                         </div>
                         <div class='bloco_info_systm'>
-                            Revisão:5 Versionamento:2.1
+                            Revisão:5 Versionamento:2.0
                         </div>
                 </div>
 
