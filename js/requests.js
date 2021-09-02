@@ -27,7 +27,7 @@ function exect_log(){
                 },
                 success:function(retorno){
 
-                    console.log(retorno)
+                 
                        
                         if(retorno ==0) {
                             $('#msg_erro').html('Usuário não Localizado!!');
@@ -123,7 +123,7 @@ function mont_table(){
 
 
 
-             console.log(dados_ret_temp)
+            console.log(dados_ret_temp)
 
                    
 

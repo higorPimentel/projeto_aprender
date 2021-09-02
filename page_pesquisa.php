@@ -81,8 +81,9 @@ function seleciona_video_reg(obj){
 
 
                 if(type_element =='it') { 
-                    id_list = elemnt.substr(2,11)      
-                    
+                    id_list = elemnt.substr(2,11) - 1      
+
+                                       
                             
                     $('.container_video_pesq').css('display','block');  
 

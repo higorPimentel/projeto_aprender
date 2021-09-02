@@ -482,7 +482,7 @@ body::-webkit-scrollbar {
     top:0;
     width:100%;
     height: 100%;
-    background-color: #131125b7;
+    background-color: #323236b7;
     display: none;
     z-index: 5;
 
@@ -491,8 +491,8 @@ body::-webkit-scrollbar {
 .bloc_video{
     display: inline-block;
     background-color: white;
-    margin-top: 100px;
-    margin-left: 20%;
+    margin-top: 200px;
+    margin-left: 35%;
     padding: 10px;
     box-shadow: 0px 0px 10px 2px rgb(17, 11, 11);
 }
