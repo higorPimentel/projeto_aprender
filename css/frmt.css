@@ -406,25 +406,32 @@ padding: 10px;
     cursor:pointer;  
 }
 
+
+/*
 body::-webkit-scrollbar {
-    width: 7px;               /* width of the entire scrollbar */
+    width: 7px;               
   }
   
   body::-webkit-scrollbar-track {
-    background: orange;        /* color of the tracking area */
+    background: orange;      
   }
 
   body::-webkit-scrollbar-thumb {
-    background-color: blue;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid orange;  /* creates padding around scroll thumb */
+    background-color: blue;    
+    border-radius: 20px;      
+    border: 3px solid orange; 
   }
 
   body {
-    scrollbar-width: 1px;          /* "auto" or "thin" */
-    scrollbar-color: rgb(100, 119, 141) rgba(43, 49, 53, 0.336) ;   /* scroll thumb and track */
+    scrollbar-width: 1px;         
+    scrollbar-color: rgb(100, 119, 141) rgba(43, 49, 53, 0.336) ;   
   }
 
+*/
+
+.tit_sub_menu{
+
+}
 
 .tit_video_min{
     color:#696969;

@@ -44,7 +44,8 @@
 
         <nav class='opc_sub_menu'>
             <ul>
-                <li id='opc_todos'>&#10162; Categorias</li>
+            <!--    <li id='opc_todos'>&#10162; Categorias</li> -->
+                <h1 class='tit_sub_menu'>Categorias</h1>
                 <li id='opc_hortalica'>&#10148; Hortaliça</li>
                 <li id='opc_culinaria'>&#10148; Culinária</li>
                 <li id='opc_erva_medic'>&#10148; Plantas Medicinais</li>               
