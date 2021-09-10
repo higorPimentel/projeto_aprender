@@ -76,14 +76,18 @@ function inicio_app(){
 
 function seleciona_video_reg(obj){
     
+
+
             let elemnt = obj.id
             let  type_element  = elemnt.substr(0,2)
 
 
+         
                 if(type_element =='it') { 
                     id_list = elemnt.substr(2,11) - 1      
 
-                                       
+                    console.log(data_return)  
+                            
                             
                     $('.container_video_pesq').css('display','block');  
 
@@ -91,8 +95,8 @@ function seleciona_video_reg(obj){
                     tbl_video = '';	
 
                     tbl_video +='<div class="qdo_video">'	
-                    tbl_video +=`<h1 class='tit_video_min'>${dados_ret_temp[id_list].descricao}</h1>`
-                    tbl_video +=`<iframe class='video_min' width="600" height="315" src="${dados_ret_temp[id_list].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`                  
+                    tbl_video +=`<h1 class='tit_video_min'>${data_return[id_list].descricao}</h1>`
+                    tbl_video +=`<iframe class='video_min' width="600" height="315" src="${data_return[id_list].url_video}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`                  
                     tbl_video +='</div>'	            
 
                      $('#container_video_pesquisa').html(tbl_video);

@@ -121,9 +121,12 @@ function mont_table(){
             let pagina_proc2 = 'page_livros'
             let x_index2 = page_atual.indexOf(pagina_proc2)
 
+            let pagina_proc_curso = 'page_cursos'
+            let x_index_curso = page_atual.indexOf(pagina_proc_curso)
 
 
-            console.log(dados_ret_temp)
+
+            console.log(x_index)
 
                    
 
@@ -135,7 +138,7 @@ function mont_table(){
 	 tbl +='<th>Categoria / Tipo</th>'
 	 tbl +='<th>Descrição</th>'
 
-            if(x_index > 3) {
+            if(x_index > 3 || x_index_curso > 3) {
                 tbl +='<th>Opções</th>'
             }
 
@@ -171,10 +174,21 @@ function mont_table(){
                                     <img src='ico/ico_video.svg'>
                                 </div>
                                 <div class="bloco_ico_list">
-                                <img src='ico/ico_download_file.svg'>
-                            </div>
+                                    <img src='ico/ico_download_file.svg'>
+                                 </div>
                             </td>`    
                  }
+
+                 if(x_index_curso > 3) {
+                    tbl +=`<td>
+                              <div onclick="seleciona_video_reg(this)" class="bloco_ico_list"  id=it${dados_ret_temp[i][idx_acces]}>
+                                  <img src='ico/ico_video.svg'>
+                              </div>                             
+                          </td>`    
+               }
+
+
+
 
                  if(x_index2 > 3) {
                     tbl +=`<td onclick="seleciona_reg_link(this)" id=it${dados_ret_temp[i][idx_acces]}>                             

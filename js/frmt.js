@@ -54,8 +54,15 @@ function exct_teste(){
     alert('ola')
 }
 
-function clear_filter(){
+function clear_filter(event){
+
+    if(event.key =='Enter') {
+
+        filter_item();
+    }
     
+
+
     let pesquisa =   $('#cx_pesquisa').val()
 
         if(pesquisa == '') {
